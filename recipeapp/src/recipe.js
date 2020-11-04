@@ -2,13 +2,13 @@ import React from 'react';
 
 const Recipe = ({title, calories, image, ingredients}) => {
   return (
-    <div>
+    <div className='recipe-bx'>
       <h1>{title}</h1>
-      <ol>
+      <ul>
         {ingredients.map(ingredient => (
           <li>{ingredient.text}</li>
         ))}
-      </ol>
+      </ul>
       <p>{calories} Calories</p>
       <img src={image} alt=""/>
     </div>
